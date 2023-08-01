@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <link rel="stylesheet"href="css/font-awesome.min.css"/>
+        <link rel="stylesheet"href="project.css"/>
+        <title>login</title>
+        <style type="text/css">
+        
+            body{
+                
+               
+                background-color: rgb(255,94,101,0.25);
+            }
+            .div_1{
+                background-image: url(ahmed.jpg);
+                box-shadow: 0px 0px 4px white;
+                width:300px;
+                height:150px;
+                position: absolute;
+                right: 35%;
+                top:35%;
+                text-align:center;
+                z-index: 100px;
+                border-radius: 5px;
+                border-color: chocolate;
+                
+            }
+            input[type="text"],input[type="password"]
+            {
+                
+                border:1.5px dashed rgb(43,68,34,0.5);
+            }
+            .my_table{
+                top:30px;
+                position:relative;
+            }
+            input[type="button"]{
+                background-color: beige;
+                box-shadow: 0px 0px 2px white;
+            }
+             input[type="reset"]{
+                background-color: beige;
+                box-shadow: 0px 0px 2px white;
+            }
+        
+        </style>
+        
+      <script src="defult.js" type="text/javascript"></script>
+      
+      <script type="text/javascript">
+          
+          function SIGN_IN(){
+              var x=document.getElementById('email').value;
+              var y=document.getElementById('pasword').value;
+              var z=new RegExp();
+              z=/[a-z0-9_]+@+[a-z0-9_]+\.+[a-z0-9_]/;
+              if(z.test(x)==false)
+                  {
+                      alert("your Email is wrong");
+                  }
+              else
+                  {
+                      z=/[a-z0-9_]/;
+                      if(z.test(y)==false)
+                          {
+                              alert('passowrd wrong');
+                          }
+                      else
+                          {
+                              document.getElementById('div').style.display='none';
+                              document.getElementById('pro').style.display='block';
+                              
+                          }
+                  }
+              
+          }
+          
+      </script>
+    </head>
+    
+    <body>
+
+           <div class="div_1" id="div">
+              <form>
+               <table class="my_table">
+                   <tr>
+                       <td>
+                         <span style="font-family: serif; color:orangered;">Email:</span>  
+                       </td>
+
+                       <td>
+                         <input type="text" id="email">  
+                       </td>
+                   </tr>
+                    <tr>
+                       <td>
+                         <span style="font-family: serif;color:orangered;">Passowrd:</span>  
+                       </td>
+
+                       <td>
+                         <input type="password" id="pasword">  
+                       </td>
+                   </tr>
+               </table>
+               <br>
+               <br>
+               <br>
+               <input type="button" value="sign_in" onclick="SIGN_IN()" >
+               <input type="button" value="log_in">
+               <input type="reset" value="reset">
+        </form>
+           </div>
+
+
+
+
+
+    <div id="pro" style="display: none;" >
+    <div class="header">
+    <div class="contact">
+    <div class="logo">
+    <h3 style="padding-left: 3px;"> wego</h3></div>
+    <div class="nav">
+    <ul>
+    <li><a href="home.html">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="about%20us.html">contact</a></li>
+    <li><a href="#">blog</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="clear"></div>
+    <div class="about">
+    <div class="content">
+    <p>   Tourist places inside and outside Egypt 
+        </p>
+    <p> <button>READ MORE</button></p>
+    </div>
+    </div>
+    <div class="hanan"><div class="content">
+    <div class="mostafa">
+    <img src="WhatsApp%20Image%202020-04-01%20at%203.52.08%20AM.jpeg"alt="image"/>
+    <p>Taj Mahal: It is a shrine constructed by the King, Shah Jahan, from 1630 to 1648 to include the remains of his third wife, who is known as Mumtaz Mahal, and is considered one of the most beautiful examples of the style of Islamic architecture, as it is widely known as the jewel of Islamic art in India and one of the immortal masterpieces in the world...
+    </p>
+    <p class="bord">
+    <button>Read More</button>
+    </p>
+    </div>
+    <div class="mostafa">
+    <img src="WhatsApp%20Image%202020-04-01%20at%203.51.08%20AM.jpeg" alt="image"/>
+    <p>The Humayun Mausoleum in Delhi included the body of the Mughal Muslim Emperor Nasiruddin Humayun. The shrine was constructed by order of the emperor's wife, and construction began in 1562 AD.The Humayun Shrine is one of the most prominent monuments of the Mughal Islamic civilization in India, and for this reason it was added to the UNESCO list of the most impo...
+    </p>
+    <p class="bord">
+    <button>Read More</button>
+    </p>
+    </div>
+    <div class="mostafa">
+    <img src="WhatsApp%20Image%202020-04-01%20at%203.18.05%20AM%20(1).jpeg"alt="image"/>
+    <p>Borghese Museum Rome Italy: You can walk around the museum and see the most beautiful paintings, sculptures from wonderful statues, and the museum contains a huge amount of beautiful and unique sculptures...
+    </p>
+    <p class="bord">
+    <button>Read More</button>
+    </p>
+    </div>
+    </div></div>
+    <div class="footer"></div>
+    </div>
+
+</body>
+</html>

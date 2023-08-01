@@ -1,0 +1,129 @@
+body
+{
+margin: 0
+}
+.content
+{
+width: auto;
+margin: auto;
+padding: 10px;
+}
+.header
+{
+width: 100%;
+    height: 80px;
+background: #000;
+}
+.header .logo h3
+{
+color: #fff;
+padding-top: 25px;
+text-transform: uppercase;
+font-size: 25px;
+margin: 0
+}
+.header .nav ul li
+{
+float: left;
+padding: 15px;
+}
+.header .nav ul li a
+{
+font-size: 18px;
+color: #ddd;
+text-decoration: none;
+}
+.header .nav ul li a:hover
+{
+color: #ccc;
+}
+.clear
+{
+clear: both;
+}
+
+.header .logo
+{
+float: left
+}
+.header .nav
+{
+float: right
+}
+.about
+{
+background-image:url(pexels-photo-296649.jpeg);
+background-size: cover;
+width: 100%;
+height: 500px;
+
+}
+.about p
+{
+margin: 0;
+padding-top: 100px;
+font-family:serif;
+text-align: center;
+color: wheat;
+font-size: 50PX;
+}
+.about button
+{
+background: #999;
+border: 0;
+width: 200px;
+height: 80px;
+font-size: 25px;
+font-weight: bold;
+border-radius: 20px;;
+border: 0;
+width: 200px;
+height: 80px;
+font-size: 25px;
+font-weight: bold;
+border-radius: 20px;
+}
+.hanan
+{
+width: 100%;
+height: 650px;
+background: #222;
+padding-bottom: 20px;
+padding-top: 20px
+}
+.hanan .mostafa
+{
+width: 31%;
+float: left;
+margin-left: 3%;
+}
+.hanan .mostafa:first-child
+{
+margin-left: 0;
+}
+.hanan .mostafa img
+{
+width: 100%
+}
+.hanan .mostafa p
+{
+text-align: center;
+padding: 25px;
+margin: 0;
+background: #fff;
+}
+.hanan .mostafa p.bord
+{
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.hanan .mostafa button
+{
+border: 0;
+width: 180px;
+height: 60px;
+font-size: 16px;
+font-weight: bold;
+border-radius: 15px;
+background: #999;
+}

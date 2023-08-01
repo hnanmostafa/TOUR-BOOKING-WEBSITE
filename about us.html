@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <link rel="stylesheet"href="css/font-awesome.min.css"/>
+        <link rel="stylesheet"href="project.css"/>
+        <title>login</title>
+        <script type="text/javascript">
+      function reselt(){  
+        var Name=document.getElementById('name').value;
+        var Email=document.getElementById('email').value;
+        var Country=document.getElementById('country');
+        var Male=document.getElementById('male');
+        var Female=document.getElementById('female');
+        var f=document.getElementById('check');
+        var About=document.getElementById('ab').value;
+        var z=new RegExp();
+        z=/[a-z0-9_]/;
+        if(z.test(Name) == false)
+            {
+                alert('enter your name correctly');
+               
+            }
+        else
+        {
+            z=/[a-z0-9_]+@+[a-z0-9_]+\.+[a-z0-9_]/;
+            if(z.test(Email) == false)
+            {
+                 alert('enter your email correctly');
+            }
+        
+        else
+        { 
+        if(Male.checked == true)
+        {
+            var G='male';
+        }
+        else if(Female.checked == true)
+        {
+            var G='female';
+        }
+        else
+        {
+            alert("Enter gender correctly");
+        }
+        if(f.checked == false)
+        {
+            alert('You must accept all items');
+        }
+        if(About == ' ')
+        {
+            alert('You must enter information about you');
+            
+        }
+            else
+            {
+                alert('Welcom '+Name);
+             
+            }
+        }
+            
+        
+        } 
+      }
+        
+        </script>
+        <style type="text/css">
+        
+            body{
+                
+               
+                background-image: url(ahmed.jpg);
+                background-size: cover;
+                text-align: center;
+            }
+
+            input[type="text"],input[type="password"]
+            {
+                
+                border:1px solid rgb(43,68,34,0.5);
+            }
+            .my_table{
+                top:30px;
+                position:relative;
+            }
+            input[type="button"]{
+                background-color: beige;
+                box-shadow: 0px 0px 2px white;
+            }
+             input[type="reset"]{
+                background-color: beige;
+                box-shadow: 0px 0px 2px white;
+            }
+            .con{
+                width: auto;
+                height: auto;
+                position: absolute;
+                top:30%;
+                float: left;
+                left: 30%;
+            }
+            .contac{
+                
+                width:auto;
+                height: auto;
+                
+            }
+            .fie{
+                background-color:darkseagreen;
+                border-style: dashed;
+                 border-bottom-left-radius: 11px;
+                 border-bottom-right-radius: 11px;
+                border-color: chocolate;
+                width: auto;
+                text-align: center;
+                border-radius: 5px;
+            }
+            
+        
+        </style>
+        
+    
+    </head>
+    
+    <body>
+    
+    <div id="pro">
+    <div class="header">
+    <div class="contact">
+    <div class="logo">
+    <h3 style="padding-left: 3px;"> wego</h3></div>
+    <div class="nav">
+    <ul>
+    <li><a href="home.html">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="about%20us.html">contact</a></li>
+    <li><a href="#">blog</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+      <br>
+       <div class="con">
+      <div class="contac">
+          <fieldset class="fie">
+              <legend><span style="font-family:serif;color: red;font-size: 18pt;">Contact us</span>
+              </legend>
+               <form method="post" action="">
+			 
+		<span style="font-family:monospace;color: black;font-size: 10pt;">Your Name</span> :<input type="text" id="name">	 
+		<br><span style="font-family:monospace;color: black;font-size: 10pt;">Your Email</span><input type="text" id="email">
+		 <br><span style="font-family:monospace;color: black;font-size: 10pt;">Your Country</span>:<select id="country">
+		  
+		  <option > egypt</option>
+		  <option selected="selected">usa </option>
+		  <option>other</option>	 
+			 
+		 </select>
+		 <br>
+		 <input type="radio" name="g" id="male"><span style="font-family:monospace;color: black;font-size: 10pt;">Male</span>
+		 <input type="radio" name="g" id="female"><span style="font-family:monospace;color: black;font-size: 10pt;">female</span>
+		 <br>
+		 <input type="checkbox" id="check"><span style="font-family:monospace;color: black;font-size: 10pt;">i'm agree all advise</span>  
+		 <br>
+		 <span style="font-family:monospace;color: black;font-size: 10pt;">About you:</span><br> <textarea rows="8" cols="50" id="ab"></textarea>
+		 <br>
+		 <input type="submit" value="submit" onclick="reselt()">
+		 <input type="reset" value="reset" style="background-color: white;">
+		 
+     </form>
+              
+          </fieldset>
+      </div>  
+    </div>
+    </div>
+
+</body>
+</html>
